@@ -56,7 +56,7 @@ of files for different types of data. Go to file manager to open files.
 To navigate, find and edit directories and files are to use commands. Use the command cd to move between
 directories, Is to list files in a directory, and nano/vim to edit files. Nano is easier to use than vim.  Vim (Vi Improved). 
 To open directories type d this will open it up (it is a command)
------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 GIT!
 git allows developers to track versions of files. Example: 
 1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine or work with a remote repository hosted on platforms like GitHub. 
@@ -98,3 +98,32 @@ git merge, a strong way to combine changes from divergant branches
 git pull, inputs a branch from a remote repository
 
 git push, move a local branch to another repository 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BASH SCRIPTING!
+
+What is bash scripting?
+Bash is a command line interface interprter, it runs in a text window. Users can manage/execute shell commands. Bash/shell scripting is the process 
+of writing a set of commands to be executed on a linux system. Bash interprter reads bash script and then executes the commands at the same time. 
+For example a user can execute a lot of commands wiwht one single click and doesn't need to write them one by one. 
+
+BASIC SYNTAX!
+
+How to write a simple Bash script?
+Hello world, will create new variable called learningbash 
+ nano hello.sh than paste the lines #!/bin/bash
+#Creates a new variable with a value of "Hello World"
+learningbash="Hello World"
+echo $learningbash
+
+Echo command, used to print out text as well as values of variables.
+Example: nano echo.sh, #!/bin/bash
+provider="Hostinger"
+echo 'The best hosting provider is $provider'
+echo "The best hosting provider is $provider"
+
+ECHO: used to display text/variables in terminal. Used to print out text
+
+READ: takes user input from terminal. Stores input in variable
+
+TOUCH: creates new empty file. Update timestamp of exisiting file
