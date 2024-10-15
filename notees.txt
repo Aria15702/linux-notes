@@ -4,8 +4,10 @@ Pwd-Print Working Directory, it will print the current working directory path an
  way through the linux file system structure. It shows the present working directory.
 
 ls-Information system, The ls command shows files in the current directory.
+ls -l, to look  at file permissions 
 
 Cd-Change directory, to move up a directory once a time. cd documents relative path, cd .. move up 1 directory, cd ~ go to home directory. 
+cd / to get to root directory 
 
 nano filename.txt this opens a file in nano text editor
 
