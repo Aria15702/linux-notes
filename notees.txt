@@ -56,7 +56,7 @@ of files for different types of data. Go to file manager to open files.
 To navigate, find and edit directories and files are to use commands. Use the command cd to move between
 directories, Is to list files in a directory, and nano/vim to edit files. Nano is easier to use than vim.  Vim (Vi Improved). 
 To open directories type d this will open it up (it is a command)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 GIT!
 git allows developers to track versions of files. Example: 
 1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine or work with a remote repository hosted on platforms like GitHub. 
