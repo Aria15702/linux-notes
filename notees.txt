@@ -110,13 +110,16 @@ For example a user can execute a lot of commands wiwht one single click and does
 BASIC SYNTAX!
 
 How to write a simple Bash script?
+
 Hello world, will create new variable called learningbash 
+
  nano hello.sh than paste the lines #!/bin/bash
 #Creates a new variable with a value of "Hello World"
 learningbash="Hello World"
 echo $learningbash
 
 Echo command, used to print out text as well as values of variables.
+
 Example: nano echo.sh, #!/bin/bash
 provider="Hostinger"
 echo 'The best hosting provider is $provider'
@@ -127,3 +130,78 @@ ECHO: used to display text/variables in terminal. Used to print out text
 READ: takes user input from terminal. Stores input in variable
 
 TOUCH: creates new empty file. Update timestamp of exisiting file
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SYSTEM MONITORING
+
+Definition!
+Process of tracking performance/health of a computer system/network. 
+Checks key metrics like CPU usage, memor, disk space, and network activity ensures everything is run smoothly.
+
+Metrics, it's data points used to assess performance/progress of a system. 
+
+Key tools!
+
+Vmstate, shows statistics of the virtual memory
+
+
+iotop, same like htop and top. accounting function
+type sudo iotope in term
+
+df, show info of file sys disk space.
+type df in term/df -h gives human readable output
+
+top, it shows real time info abt system processes (CPU and memory usage). Monitors system performance.
+type top in terminal 
+
+htop, user frinedly top. Displays system processes with visual layout and gives easy navigation. Colour coded metrics. 
+type htop in terminal 
+
+uptime, amount of time computar/system has been running without restarting.
+type uptime in term
+
+Log Monitoring!
+
+Journalctl, views/manage logs collected by systemd journal. Gives detailed info abt system/service events.
+
+Journalctl 
+
+Jorunalctl -f (Follow logs in real time)
+
+Journalctl -u <service_name> (Look at logs for specific service) EXAMPLE Journalctl -u sshd
+
+Journalctl -b (View logs for specific boot session) EXAMPLE to view previous boot Journalctl -b -1
+
+Journalctl --since "2024-10-17 10:00:00" (View logs since specific date/time) 
+
+Jornalctl --since "2024-10-26" --until "2024-10-17 12:00" (To see logs within a date range")
+
+Jounalctl -k (view kernel log) 
+
+Journalctl -n 50 (Limit output by number of line)
+
+Journalctl -p err (Filter by prority level, you can filter log levels such as error or etc) 
+
+
+/var/log, stores log files. Helps users monitor and troubleshoot the system. 
+view logs using cat, less, or tail.
+
+cat /var/log/syslog : Displays entire system log
+
+less /var/log/syslog : Will open system log for easy scrolling
+
+tail /var/log/syslog : Lets you see last 10 lines of system log
+
+tail -f /var/log/syslog : repeatedly  shows new log entries as they happen
+
+How to check authentication logs!
+
+cat /var/log/auth.log : look at authentication attempts. EXAMPLE login or sudo
+
+
+
+
+
+
+
+
