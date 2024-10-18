@@ -1,4 +1,4 @@
-COMMON LINUX COMMANDS!
+''COMMON LINUX COMMANDS!''
 
 Pwd-Print Working Directory, it will print the current working directory path and it starts from the root. You can use this command to find your
  way through the linux file system structure. It shows the present working directory.
@@ -36,7 +36,7 @@ chmod u+x filename (gives execute permission)
 chmod g-w filename (gets rid of write premission from group) 
 chmod 755 filename (permission sets to rwxr-xr-x)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NETWORKING!
+''NETWORKING!''
 
 ifconfig-Interface configuration, Looks at network interfaces and looks at IP addresses.
 
@@ -44,7 +44,7 @@ Ping-It tests the connectivity and system availability.
 Dir-Directory, this command always you to view the contents of a directory. The command is in many computers 
 operating systems and is used for it is used for computer files a directory listing. 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WHAT ARE DIRECTORIES AND FILES?
+''WHAT ARE DIRECTORIES AND FILES?''
 
 Directories are like folders that keep/store the files. Directories can help keep your files structured, organized, 
 and accessible. Each directory can contain files. You can use the commands cd and Is to change directories and to list
@@ -58,7 +58,10 @@ directories, Is to list files in a directory, and nano/vim to edit files. Nano i
 To open directories type d this will open it up (it is a command)
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 GIT!
-git allows developers to track versions of files. Example: 
+
+''git allows developers to track versions of files''
+. Example: 
+
 1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine or work with a remote repository hosted on platforms like GitHub. 
 
  
@@ -100,7 +103,7 @@ git pull, inputs a branch from a remote repository
 git push, move a local branch to another repository 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-BASH SCRIPTING!
+''BASH SCRIPTING!''
 
 What is bash scripting?
 Bash is a command line interface interprter, it runs in a text window. Users can manage/execute shell commands. Bash/shell scripting is the process 
@@ -109,7 +112,8 @@ For example a user can execute a lot of commands wiwht one single click and does
 
 BASIC SYNTAX!
 
-How to write a simple Bash script?
+
+''How to write a simple Bash script?''
 
 Hello world, will create new variable called learningbash 
 
@@ -132,7 +136,7 @@ READ: takes user input from terminal. Stores input in variable
 TOUCH: creates new empty file. Update timestamp of exisiting file
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-SYSTEM MONITORING
+''SYSTEM MONITORING''
 
 Definition!
 Process of tracking performance/health of a computer system/network. 
@@ -140,7 +144,8 @@ Checks key metrics like CPU usage, memor, disk space, and network activity ensur
 
 Metrics, it's data points used to assess performance/progress of a system. 
 
-Key tools!
+
+''Key tools!''
 
 Vmstate, shows statistics of the virtual memory
 
@@ -160,7 +165,8 @@ type htop in terminal
 uptime, amount of time computar/system has been running without restarting.
 type uptime in term
 
-Log Monitoring!
+
+''Log Monitoring!''
 
 Journalctl, views/manage logs collected by systemd journal. Gives detailed info abt system/service events.
 
@@ -182,7 +188,6 @@ Journalctl -n 50 (Limit output by number of line)
 
 Journalctl -p err (Filter by prority level, you can filter log levels such as error or etc) 
 
-
 /var/log, stores log files. Helps users monitor and troubleshoot the system. 
 view logs using cat, less, or tail.
 
@@ -197,6 +202,67 @@ tail -f /var/log/syslog : repeatedly  shows new log entries as they happen
 How to check authentication logs!
 
 cat /var/log/auth.log : look at authentication attempts. EXAMPLE login or sudo
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SYSTEM SECURITY!
+
+''Definition!''
+System secuirty will protect computors/networks from threats (hacking, damage and unauthorized access). 
+
+
+''Basic Principles!''
+
+Least privilege
+-gives users the bare minimum permissions necessary.
+
+Regular Updates 
+-system and software is always updated to patch vulnerabilities.
+
+User Account Management
+ -using strong passwords. Disable non needed accounts. 
+
+File permissions 
+-proper permissions for files/directories with chmod, chown, and umask.
+
+Firewall configuration 
+-uses iptables or ufw to contol traffic (ongoing/outgoing).
+
+Logging and Monitoring 
+-monitor sys logs regularly using syslog or journalctl.
+
+Disable Unused services
+-shut offs non needed services to reduce attack surfaces.
+
+
+''File Permissions!''
+
+chown
+-Change file ownership 
+Usage chown [owner] : [group] filename 
+EXAMPLE: chown john:admin file.txt
+-This will change the owner of file to john and the group to admin.
+
+chmod
+-Change file permissions 
+Usage shmod 755 script.sh
+EXAMPLE: chmod 755 script.sh 
+-Sets file permissions of script to rwxr-xr-x (owner can read,write, and execute)
+
+ls -l
+-List files with detailed info
+Usage ls -l
+EXAMPLE: -rwxr-xr-x 1 john admin 1234 oct 18 10:00 script.sh 
+-This will show owner, group, file size, last modified date, and file name. 
+
+
+
+
+
+
+
+
+
+
 
 
 
