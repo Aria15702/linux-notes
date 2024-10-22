@@ -134,6 +134,9 @@ ECHO: used to display text/variables in terminal. Used to print out text
 READ: takes user input from terminal. Stores input in variable
 
 TOUCH: creates new empty file. Update timestamp of exisiting file
+
+''Variables!''
+-Containers that will store values. EXAMPLE age_years or age_days are variables.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ''SYSTEM MONITORING''
@@ -323,6 +326,8 @@ How to deny ports!
 . sudo ufw deny port_number
 
 . EXAMPLE sudo ufw deny 20 (This will deny port 22)
+
+
 
 
 
