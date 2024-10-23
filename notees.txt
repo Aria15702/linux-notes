@@ -33,7 +33,9 @@ The command is used to make administrative tasks that need elevated permissions 
 you want to run with elevated privileges. 
 
 chmod u+x filename (gives execute permission) 
+
 chmod g-w filename (gets rid of write premission from group) 
+
 chmod 755 filename (permission sets to rwxr-xr-x)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ''NETWORKING!''
@@ -41,6 +43,7 @@ chmod 755 filename (permission sets to rwxr-xr-x)
 ifconfig-Interface configuration, Looks at network interfaces and looks at IP addresses.
 
 Ping-It tests the connectivity and system availability. 
+
 Dir-Directory, this command always you to view the contents of a directory. The command is in many computers 
 operating systems and is used for it is used for computer files a directory listing. 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -57,20 +60,24 @@ To navigate, find and edit directories and files are to use commands. Use the co
 directories, Is to list files in a directory, and nano/vim to edit files. Nano is easier to use than vim.  Vim (Vi Improved). 
 To open directories type d this will open it up (it is a command)
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-GIT!
+''GIT!''
 
 ''git allows developers to track versions of files''
-. Example: 
 
-1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine or work with a remote repository hosted on platforms like GitHub. 
+Example: 
 
- 
-
-2. Commit, A commit is a snapshot of your files at a specific point in time. When you make changes, you can commit those changes with a message describing what you did. 
+1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine
+ or work with a remote repository hosted on platforms like GitHub. 
 
  
 
-3. Branch, Branches allow you to work on different features or fixes independently without affecting the main project. You can merge branches later when you're ready. 
+2. Commit, A commit is a snapshot of your files at a specific point in time. When you make changes, you can commit those changes with
+ a message describing what you did. 
+
+ 
+
+3. Branch, Branches allow you to work on different features or fixes independently without affecting the main project. You can merge
+ branches later when you're ready. 
 
  
 
@@ -78,15 +85,17 @@ GIT!
 
  
 
-5. Push and Pull, "Push" sends your local commits to the remote repository, while "pull" fetches changes from the remote repository to your local machine. 
+5. Push and Pull, "Push" sends your local commits to the remote repository, while "pull" fetches changes from the remote repository
+ to your local machine. 
 
  
 
-To get started with Git on Linux, you can install it using your package manager, usually with a command like `sudo apt install git` (for Debian-based systems) or `sudo yum install git` (for Red Hat-based systems). 
+Install it using your package manager, usually with a command like `sudo apt install git` (for Debian-based systems)
 
  
 
-Once installed, you can initialize a new repository with `git init`, check the status of your files with `git status`, and start committing changes! 
+Once installed, you can initialize a new repository with `git init`, check the status of your files with `git status`, and start
+ committing changes! 
 
 git commit, staged snapshot commits it to the project history
 
@@ -105,12 +114,16 @@ git push, move a local branch to another repository
 
 ''BASH SCRIPTING!''
 
-What is bash scripting?
+''WHAT IS BASH SCRIPTING?''
+
 Bash is a command line interface interprter, it runs in a text window. Users can manage/execute shell commands. Bash/shell scripting is the process 
 of writing a set of commands to be executed on a linux system. Bash interprter reads bash script and then executes the commands at the same time. 
-For example a user can execute a lot of commands wiwht one single click and doesn't need to write them one by one. 
+For example a user can execute a lot of commands wiht one single click and doesn't need to write them one by one. 
 
-BASIC SYNTAX!
+writing a list of intsructions (script) for the computer to follow. You can move files, install programs, or to run muiltiple tasks automatically.
+
+
+''BASIC SYNTAX!''
 
 
 ''How to write a simple Bash script?''
@@ -129,6 +142,18 @@ provider="Hostinger"
 echo 'The best hosting provider is $provider'
 echo "The best hosting provider is $provider"
 
+EXAMPLE:
+
+#!/bin/bash 
+DTR="/path/to/directory"
+if [ -d "$DIR" ]; then
+     echo "Dierctory exists."
+else
+    echo "Directory does not exist"
+fi
+
+if, is used to look if something is true (helps manage what parts of a script is based on a condition). 
+
 ECHO: used to display text/variables in terminal. Used to print out text
 
 READ: takes user input from terminal. Stores input in variable
@@ -136,12 +161,14 @@ READ: takes user input from terminal. Stores input in variable
 TOUCH: creates new empty file. Update timestamp of exisiting file
 
 ''Variables!''
--Containers that will store values. EXAMPLE age_years or age_days are variables.
+-Containers that will store values. EXAMPLE age_years or age_days are variables. Put read -p "Enter your age in years:" age_years 
+this will take the users info and put it in the age_year variable.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ''SYSTEM MONITORING''
 
-Definition!
+''Definition!''
 Process of tracking performance/health of a computer system/network. 
 Checks key metrics like CPU usage, memor, disk space, and network activity ensures everything is run smoothly.
 
@@ -216,25 +243,25 @@ System secuirty will protect computors/networks from threats (hacking, damage an
 ''Basic Principles!''
 
 Least privilege
--gives users the bare minimum permissions necessary.
+-> gives users the bare minimum permissions necessary.
 
 Regular Updates 
--system and software is always updated to patch vulnerabilities.
+-> system and software is always updated to patch vulnerabilities.
 
 User Account Management
- -using strong passwords. Disable non needed accounts. 
+ -> using strong passwords. Disable non needed accounts. 
 
 File permissions 
--proper permissions for files/directories with chmod, chown, and umask.
+-> proper permissions for files/directories with chmod, chown, and umask.
 
 Firewall configuration 
--uses iptables or ufw to contol traffic (ongoing/outgoing).
+-> uses iptables or ufw to contol traffic (ongoing/outgoing).
 
 Logging and Monitoring 
--monitor sys logs regularly using syslog or journalctl.
+-> monitor sys logs regularly using syslog or journalctl.
 
 Disable Unused services
--shut offs non needed services to reduce attack surfaces.
+-> shut offs non needed services to reduce attack surfaces.
 
 
 ''File Permissions!''
@@ -262,7 +289,7 @@ EXAMPLE: -rwxr-xr-x 1 john admin 1234 oct 18 10:00 script.sh
 ''User Management''
 
 
-How to create users!
+''How to create users!''
 -Use commands such as adduser or useradd 
 
 1. sudo adduser username (using adduser, creating user)
@@ -285,7 +312,7 @@ sudo systemctl restart sshd
  
 
 
- How to modify users!
+ ''How to modify users!''
 
 . sudo usermod -1 newname oldname (Change Username)
 
@@ -297,7 +324,7 @@ sudo systemctl restart sshd
 
 
 
-How to delete users! 
+''How to delete users!''
 
 . sudo deluser username (Delete User But Keeps Home Directory)
 
@@ -309,23 +336,25 @@ ufw
 -Managing firewall rules in linux. Contrrols network traffic by blocks specific connections to enhance system security. 
 User friendly 
 
-How to enable it!
+''How to enable it!''
 
 1. sudo ufw enable (Enable UFW)
 
 2. sudo ufw status (Check status)
 
-How to allow ports!
+''How to allow ports!''
 
 . sudo ufw allow port_number
 
 . EXAMPLE sudo allow 80 (To allow port 80)
 
-How to deny ports!
+''How to deny ports!''
 
 . sudo ufw deny port_number
 
 . EXAMPLE sudo ufw deny 20 (This will deny port 22)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
