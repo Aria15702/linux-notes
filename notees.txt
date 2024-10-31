@@ -3,49 +3,68 @@
 Pwd-Print Working Directory, it will print the current working directory path and it starts from the root. You can use this command to find your
  way through the linux file system structure. It shows the present working directory.
 
+
 ls-Information system, The ls command shows files in the current directory.
 ls -l, to look  at file permissions 
+
 
 Cd-Change directory, to move up a directory once a time. cd documents relative path, cd .. move up 1 directory, cd ~ go to home directory. 
 cd / to get to root directory 
 
+
 nano filename.txt this opens a file in nano text editor
+
 
 echo "Text" &gt;&gt; filesname.txt (this command will append text to a file) 
 echo "text" > filename.txt (to write in file)
 
+
 Mkdir-Make a new directory,  it makes a myfolder. mkdir myfolder 
+
 
 Touch-makes an empty file and it changes the timestamps of files that already exist. Touch filename.txt
 
+
 Rm-Remove, It deletes files and directories. rm filename.txt. rmdir myfolder, rm -r myfolder (removes contents as well as directory) 
+
 
 Cp-Copy, this command duplicates files/directories in the same location. Location can also be different. (copy file1 and it turns to file2)
 
+
 Mv-Move, used to move or rename files or directories in linux.
+
 
 Cat-Concatenation, it previews the contents of a file. It can read one or more files and it can print its content to the terminal. It can also
 combine files. cat filename.txt
+
 Less filename.txt, this command allows yourself to scroll through a file. 
+
 
 Sudo-Superuser do, sudo is a command that lets users run programs with the security privileges of another user.
 The command is used to make administrative tasks that need elevated permissions on a system. Type sudo with the command
 you want to run with elevated privileges. 
 
+
 chmod u+x filename (gives execute permission) 
 
+
 chmod g-w filename (gets rid of write premission from group) 
+
 
 chmod 755 filename (permission sets to rwxr-xr-x)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ''NETWORKING!''
 
+
 ifconfig-Interface configuration, Looks at network interfaces and looks at IP addresses.
+
 
 Ping-It tests the connectivity and system availability. 
 
+
 Dir-Directory, this command always you to view the contents of a directory. The command is in many computers 
 operating systems and is used for it is used for computer files a directory listing. 
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ''WHAT ARE DIRECTORIES AND FILES?''
 
@@ -53,40 +72,50 @@ Directories are like folders that keep/store the files. Directories can help kee
 and accessible. Each directory can contain files. You can use the commands cd and Is to change directories and to list
 the contents of directories.  
 
+
 Files are where you store your data. Files can contain information like audio files and binary data. There are many types 
 of files for different types of data. Go to file manager to open files. 
+
 
 To navigate, find and edit directories and files are to use commands. Use the command cd to move between
 directories, Is to list files in a directory, and nano/vim to edit files. Nano is easier to use than vim.  Vim (Vi Improved). 
 To open directories type d this will open it up (it is a command)
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ''GIT!''
 
 ''git allows developers to track versions of files''
+
 
 Example: 
 
 1. Repository (Repo), This is where your project files and their history are stored. You can create a local repository on your machine
  or work with a remote repository hosted on platforms like GitHub. 
 
+
  
 
 2. Commit, A commit is a snapshot of your files at a specific point in time. When you make changes, you can commit those changes with
  a message describing what you did. 
+
 
  
 
 3. Branch, Branches allow you to work on different features or fixes independently without affecting the main project. You can merge
  branches later when you're ready. 
 
+
  
 
 4. Clone, this command allows you to create a copy of a remote repository on your local machine. 
 
+
  
 
 5. Push and Pull, "Push" sends your local commits to the remote repository, while "pull" fetches changes from the remote repository
+
  to your local machine. 
+
 
  
 
@@ -97,17 +126,24 @@ Install it using your package manager, usually with a command like `sudo apt ins
 Once installed, you can initialize a new repository with `git init`, check the status of your files with `git status`, and start
  committing changes! 
 
+
 git commit, staged snapshot commits it to the project history
+
 
 git config, sets of configuration options to your git installation
 
+
 git init, opens a new git repository
+
 
 git log, lets you see the last alteration of a project
 
+
 git merge, a strong way to combine changes from divergant branches
 
+
 git pull, inputs a branch from a remote repository
+
 
 git push, move a local branch to another repository 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -135,12 +171,15 @@ Hello world, will create new variable called learningbash
 learningbash="Hello World"
 echo $learningbash
 
+
+
 Echo command, used to print out text as well as values of variables.
 
 Example: nano echo.sh, #!/bin/bash
 provider="Hostinger"
 echo 'The best hosting provider is $provider'
 echo "The best hosting provider is $provider"
+
 
 EXAMPLE:
 
@@ -152,13 +191,18 @@ else
     echo "Directory does not exist"
 fi
 
+
 if, is used to look if something is true (helps manage what parts of a script is based on a condition). 
+
 
 ECHO: used to display text/variables in terminal. Used to print out text
 
+
 READ: takes user input from terminal. Stores input in variable
 
+
 TOUCH: creates new empty file. Update timestamp of exisiting file
+
 
 ''Variables!''
 -Containers that will store values. EXAMPLE age_years or age_days are variables. Put read -p "Enter your age in years:" age_years 
@@ -175,16 +219,20 @@ Checks key metrics like CPU usage, memor, disk space, and network activity ensur
 Metrics, it's data points used to assess performance/progress of a system. 
 
 
+
 ''Key tools!''
 
 Vmstate, shows statistics of the virtual memory
 
 
+
 iotop, same like htop and top. accounting function
 type sudo iotope in term
 
+
 df, show info of file sys disk space.
 type df in term/df -h gives human readable output
+
 
 top, it shows real time info abt system processes (CPU and memory usage). Monitors system performance.
 type top in terminal 
@@ -274,9 +322,10 @@ EXAMPLE: chown john:admin file.txt
 
 chmod
 -Change file permissions 
-Usage shmod 755 script.sh
+Usage chmod 755 script.sh
 EXAMPLE: chmod 755 script.sh 
 -Sets file permissions of script to rwxr-xr-x (owner can read,write, and execute)
+chmod +x ./filename
 
 ls -l
 -List files with detailed info
