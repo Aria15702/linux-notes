@@ -194,6 +194,33 @@ fi
 
 if, is used to look if something is true (helps manage what parts of a script is based on a condition). 
 
+nano, is a text editor and you use it to write the script within.
+
+#!/bin/bash, is first line of bash script and it tells the sys to use bash to run the script.
+
+''BASIC COMPONENTS''
+
+VAriables, used to store data EX=NAME="Alice" (under that) echo "Hello, $NAME!"
+
+Comments, Start with #, explaining the code. 
+
+Conditional Statements, For logic and decision-making
+EXAMPLE=if [ "$NAME" == "Alice" ]; then
+    echo "Welcome, Alice!"
+fi
+
+
+Loops, for repeating commands
+EXAMPLE=for i in {1..5}; do
+    echo "Count: $i"
+done
+
+
+''HOW TO RUN BASH SCRIPT''
+
+chmod +x script.sh, this will give the file execute permissions
+
+./script, write this to run it
 
 ECHO: used to display text/variables in terminal. Used to print out text
 
