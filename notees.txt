@@ -52,6 +52,9 @@ chmod g-w filename (gets rid of write premission from group)
 
 
 chmod 755 filename (permission sets to rwxr-xr-x)
+
+Searching for files and text within files, find, grep
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ''NETWORKING!''
 
@@ -197,6 +200,14 @@ if, is used to look if something is true (helps manage what parts of a script is
 nano, is a text editor and you use it to write the script within.
 
 #!/bin/bash, is first line of bash script and it tells the sys to use bash to run the script.
+
+Basic scripting constructs: loops (for, while), conditionals (if, else)
+
+Input/output redirection: &gt;, &gt;&gt;, &lt;
+
+Piping commands: |
+
+Command substitution: $(command)
 
 ''BASIC COMPONENTS''
 
