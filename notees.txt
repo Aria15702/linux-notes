@@ -45,13 +45,27 @@ The command is used to make administrative tasks that need elevated permissions 
 you want to run with elevated privileges. 
 
 
-chmod u+x filename (gives execute permission) 
+chmod +x filename (gives execute permission) 
 
 
-chmod g-w filename (gets rid of write premission from group) 
+chmod g-w filename (gets rid of writing premission from group) 
 
 
-chmod 755 filename (permission sets to rwxr-xr-x)
+chmod 755 filename (permission sets to rwx-xr-x)
+
+r=4
+
+w=2
+
+x=1
+
+-rwxrwxrwx (-Is file)
+
+drwx r-xr-r (d is diertory)
+(These are just examples)
+
+-|rwx|rwx|rwx
+-> 1st|=Owner 2nd|=Group 3rd|=other
 
 Searching for files and text within files, find, grep
 
