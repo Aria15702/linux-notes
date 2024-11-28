@@ -98,6 +98,52 @@ To navigate, find and edit directories and files are to use commands. Use the co
 directories, Is to list files in a directory, and nano/vim to edit files. Nano is easier to use than vim.  Vim (Vi Improved). 
 To open directories type d this will open it up (it is a command)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+''Systems diagram in words''
+              
+System defines the file system & permissions & users(Accounts)
+
+Users belong to User types (Root, Regular, Daemons, Guest)
+
+User Types access File systems & have permissions
+
+Permissions govern to the file system
+
+File system affects systems
+
+''How to add/delete users''
+
+sudo adduser username
+->This is how you add a user
+
+sudo deluser username
+->This is how you delete a user
+
+sudo deluser --remove-home username
+->This is how you delete a user and their home directory
+
+''Users''
+
+Root user
+->Administrator w/ full control over system. 
+
+Regular User
+->limited permissions for security. Can only access their own file/directory 
+
+System user
+->Created by system for running services 
+
+Daemon user
+->System user created to run background services. Used for security/isolation of services. Has no login access. 
+
+Guest user 
+->Temporary user account w/ limited permissions. Has No password. Often deletd after logout. Used for short term access without 
+affecting the system. 
+
+cat /etc/passwd
+->List users (it shows all users and user types) 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ''GIT!''
 
